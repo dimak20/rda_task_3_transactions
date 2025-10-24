@@ -1,6 +1,7 @@
 -- Use our database
 USE ShopDB;
 
+-- !!!! Important This line is obliged OUTSIDE the transaction due to test.sh
 INSERT INTO Orders (CustomerID, Date)
 VALUES (1, '2023-01-01');
 
